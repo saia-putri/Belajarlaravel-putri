@@ -1,0 +1,42 @@
+:root{
+    --warna-bg-primary: #9a5f4a;
+    --warna-text-primary: #d3d3d3;
+    --warna-bg: rgb(255, 255, 255);
+    --font: 'Poppins', sans-serif;
+    --warna-bg-btn: #567451;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+.bg-coffee{
+    background-color: var(--warna-bg-primary);
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.header{
+    background-image: url(img/coffee-bg.jpg);
+    padding: 185px;
+    background-position: center;
+    background-size: cover;
+}
+.header::after{
+    background-color: var(--warna-bg);
+    padding: 185px;
+    background-position: center;
+    background-size: cover;
+}
+.judul-header{
+    color: var(--warna-text-primary);
+    font-weight: 250;
+    font-size: 55px;
+    text-shadow: 2px 2px rgb(84, 51, 30);
+}
+.bg-btn{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-btn);
+}
+.bg-btn:hover{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-primary);
+}
