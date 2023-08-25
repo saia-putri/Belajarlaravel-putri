@@ -36,7 +36,7 @@
             <h5 class="card-title">{{$post->judul_post}}</h5>
                 <p class="card-text">{{$post->isi_post}}</p>
                 <p class="card-text">
-                    <small class="text-body-secondary">{{$post->penulis_post}}</small>
+                    <small class="text-body-secondary">{{ $post->users['name'] }}</small>
                     <a href="" class="btn"><i class="bi bi-hand-thumbs-up"></i>Like</a>
                     <a href="" class="btn"><i class="bi bi-chat-heart"></i>Comment</a>
                 </p>

@@ -11,9 +11,11 @@
                 @method('PUT')
                 @csrf
                     <div class="mb-3">
-                        <label for="penulis" class="form-label">Penulis</label>
-                        <input type="text" class="form-control" id="penulis" name="penulis_post" 
-                            value="{{ $posts->penulis_post }}">
+                    <label for="penulis" class="form-label">Penulis</label>
+                        <input type="hidden" class="form-control" id="penulis" name="penulis_post"
+                            value="{{ Auth::user()->id }}" >
+                        <input type="text" class="form-control" id="penulis"
+                            value="{{ Auth::user()->name }}" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="judul_post" class="form-label">Judul Post</label>
